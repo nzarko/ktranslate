@@ -1,0 +1,16 @@
+Source: ktranslate
+Section: kde
+Priority: optional
+Maintainer: Nikos Zarkadas <nzarko@acn.gr>
+Build-Depends: debhelper (>= 4.0.0), autotools-dev, libc6-dev (>=2.3.2.ds1-21 ), libice-dev (>= 4.3.0.dfsg.1-10 ), libpng12-dev (>= 1.2.8rel-1 ), libqt3-mt-dev (>= 3 ), libsm-dev (>= 6.8.0.dfsg.1-1 ), libx11-dev (>= 6.8.0.dfsg.1-1 ), libxext-dev (>= 6.8.0.dfsg.1-1 ), linux-kernel-headers (>= 2.5.999-test7-bk-16 ), zlib1g-dev (>= 1 )
+Standards-Version: 3.6.1
+
+Package: ktranslate
+Architecture: any
+Depends: base-files (>= 3.1.2 ), binutils (>= 2.15-5 ), coreutils (>= 5.2.1-2 ), gcc (>= 1 ), gettext (>= 0.14.1-10 ), grep (>= 2.5.1.ds1-4 ), kdelibs (>= 4 ), libacl1 (>= 2.2.23-1 ), libart-2.0-2 (>= 2.3.17-1 ), libattr1 (>= 2.4.16-1 ), libaudio2 (>= 1.7-2 ), libc6 (>= 2.3.2.ds1-21 ), libexpat1 (>= 1.95.8-1 ), libfontconfig1 (>= 2.3.1-2 ),libfreetype6 (>= 2.1.7-2.3 ), libgcc1 (>= 1 ), libice6 (>= 6.8.0 ), libidn11 (>= 0.5.13-1.0 ), libncurses5 (>= 5.4-4 ), libpng12-0 (>= 1.2.8rel-1 ), libqt3-mt (>= 3 ), libsm6 (>= 6.8.0.dfsg.1-1), libstdc++6 (>= 1 ),libx11-6 (>= 6.8.0.dfsg.1-1 ), libxcursor1 (>= 1.1.3-1 ), libxext6 (>= 6.8.0.dfsg.1-1 ), libxft2 (>= 2.1.2-6 ), libxrandr2 (>= 6.8.0.dfsg.1-1 ), libxrender1 (>= 0.8.3-7 ), libxt6 (>= 4.3.0.dfsg.1-10 ), linux-kernel-headers (>= 2.5.999-test7-bk-16 ), qt3-designer (>= 3 ), xutils (>= 6.8.0.dfsg.1-1 ), zlib1g (>= 1 )
+Description: Greek - English KDE application.
+
+Package: ktranslate-doc
+Architecture: all
+Description: Documentation for ktranslate
+ Documention for the ktranslate package.

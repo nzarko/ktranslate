@@ -1,0 +1,627 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>AddWordDialogBase</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>AddWordDialogBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>584</width>
+            <height>380</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Add Words</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QWidgetStack">
+            <property name="name">
+                <cstring>m_widgetStack</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>progressPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>m_taskLabel</cstring>
+                        </property>
+                        <property name="text">
+                            <string>textLabel1</string>
+                        </property>
+                    </widget>
+                    <widget class="KProgress">
+                        <property name="name">
+                            <cstring>m_parsingProgress</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QTextBrowser">
+                        <property name="name">
+                            <cstring>m_errorTextBrowser</cstring>
+                        </property>
+                        <property name="paletteBackgroundColor">
+                            <color>
+                                <red>255</red>
+                                <green>255</green>
+                                <blue>255</blue>
+                            </color>
+                        </property>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout8</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer3</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="KPushButton">
+                                <property name="name">
+                                    <cstring>m_progressOkButton</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>1</hsizetype>
+                                        <vsizetype>1</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="text">
+                                    <string>start</string>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image0</iconset>
+                                </property>
+                            </widget>
+                            <widget class="KPushButton">
+                                <property name="name">
+                                    <cstring>m_progressEditButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Edit...</string>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image1</iconset>
+                                </property>
+                            </widget>
+                            <widget class="KPushButton">
+                                <property name="name">
+                                    <cstring>m_progressTryAgainButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Try Again</string>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image2</iconset>
+                                </property>
+                            </widget>
+                            <widget class="KPushButton">
+                                <property name="name">
+                                    <cstring>m_finishButton</cstring>
+                                </property>
+                                <property name="enabled">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="text">
+                                    <string>finish</string>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image3</iconset>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>defaultPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox1</cstring>
+                        </property>
+                        <property name="title">
+                            <string></string>
+                        </property>
+                        <vbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout20</cstring>
+                                </property>
+                                <vbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout18</cstring>
+                                        </property>
+                                        <hbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel1_2</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>5</hsizetype>
+                                                        <vsizetype>0</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="text">
+                                                    <string>English Word :</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>AlignVCenter</set>
+                                                </property>
+                                            </widget>
+                                            <widget class="KLineEdit">
+                                                <property name="name">
+                                                    <cstring>m_enWordLineEdit</cstring>
+                                                </property>
+                                            </widget>
+                                        </hbox>
+                                    </widget>
+                                    <widget class="QLayoutWidget">
+                                        <property name="name">
+                                            <cstring>layout19</cstring>
+                                        </property>
+                                        <hbox>
+                                            <property name="name">
+                                                <cstring>unnamed</cstring>
+                                            </property>
+                                            <widget class="QLabel">
+                                                <property name="name">
+                                                    <cstring>textLabel2_2</cstring>
+                                                </property>
+                                                <property name="sizePolicy">
+                                                    <sizepolicy>
+                                                        <hsizetype>5</hsizetype>
+                                                        <vsizetype>0</vsizetype>
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Translation    :</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>WordBreak|AlignVCenter</set>
+                                                </property>
+                                            </widget>
+                                            <widget class="KLineEdit">
+                                                <property name="name">
+                                                    <cstring>m_trWordLineEdit</cstring>
+                                                </property>
+                                            </widget>
+                                        </hbox>
+                                    </widget>
+                                </vbox>
+                            </widget>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout7_2</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>m_addFromFileCheckBox</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Add Records From File</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="KPushButton">
+                                        <property name="name">
+                                            <cstring>m_findRecordsFileBtn</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>...</string>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer3_2</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>40</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="KPushButton">
+                                        <property name="name">
+                                            <cstring>m_addWordBtn</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Add</string>
+                                        </property>
+                                        <property name="iconSet">
+                                            <iconset>image4</iconset>
+                                        </property>
+                                    </widget>
+                                    <widget class="KPushButton">
+                                        <property name="name">
+                                            <cstring>m_clearAllBtn</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Clear All</string>
+                                        </property>
+                                        <property name="iconSet">
+                                            <iconset>image5</iconset>
+                                        </property>
+                                    </widget>
+                                </hbox>
+                            </widget>
+                        </vbox>
+                    </widget>
+                    <widget class="QGroupBox">
+                        <property name="name">
+                            <cstring>groupBox2</cstring>
+                        </property>
+                        <property name="title">
+                            <string></string>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <property name="margin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>0</number>
+                            </property>
+                            <widget class="KListView">
+                                <column>
+                                    <property name="text">
+                                        <string>English Word</string>
+                                    </property>
+                                    <property name="pixmap">
+                                        <pixmap>image6</pixmap>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>Translation</string>
+                                    </property>
+                                    <property name="pixmap">
+                                        <pixmap>image7</pixmap>
+                                    </property>
+                                    <property name="clickable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="resizable">
+                                        <bool>true</bool>
+                                    </property>
+                                </column>
+                                <property name="name">
+                                    <cstring>m_addDlgListView</cstring>
+                                </property>
+                                <property name="acceptDrops">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="resizePolicy">
+                                    <enum>AutoOneFit</enum>
+                                </property>
+                                <property name="vScrollBarMode">
+                                    <enum>Auto</enum>
+                                </property>
+                                <property name="hScrollBarMode">
+                                    <enum>Auto</enum>
+                                </property>
+                                <property name="selectionMode" stdset="0">
+                                    <enum>Single</enum>
+                                </property>
+                                <property name="allColumnsShowFocus">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="showSortIndicator">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="resizeMode">
+                                    <enum>AllColumns</enum>
+                                </property>
+                                <property name="fullWidth">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string>Click an item to edit in the line edit above</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout10</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>buttonHelp</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Help</string>
+                                </property>
+                                <property name="accel">
+                                    <string>F1</string>
+                                </property>
+                                <property name="autoDefault">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image8</iconset>
+                                </property>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>Horizontal Spacing2_2</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>150</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>buttonOk</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;OK</string>
+                                </property>
+                                <property name="accel">
+                                    <string></string>
+                                </property>
+                                <property name="autoDefault">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="default">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image9</iconset>
+                                </property>
+                            </widget>
+                            <widget class="KPushButton">
+                                <property name="name">
+                                    <cstring>m_advanceEditButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Advance Edit</string>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image10</iconset>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>buttonCancel</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>&amp;Cancel</string>
+                                </property>
+                                <property name="accel">
+                                    <string></string>
+                                </property>
+                                <property name="autoDefault">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="iconSet">
+                                    <iconset>image11</iconset>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="553">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000001f049444154789cbd94316fd34018865f212a1ddb75a8e4318c45ed0fc05bf909e11fc04f802530c29664c9d6a14c540cac9eb230f99082dac14dba203952901c29956c29831dd1e165f09dc9d9e74018b8e5f149f6778f5f7ffec0354145704dcc22964bb3be0f273332278331c9840c5588ede7b7f7d5265421b863e579c9342d2fe2456a15afd33e29da519924f3da9bacdacdffdab861be2e19c76e7338336e5b3f35ebf739cc1fa8a9024e00355578728addeb00280a20fb020c4697c8469a9f80c1e74b1c7ff369eaed97b1314e6d5e5d977cd5ebb391b18c043d4aca485052520cdd91e7bab8e98eab28d6c563ce7a091b197b94d5c35d9e518c777ccb9566ac796b8cdfb191f1e6660300788e67b8c657e0c68eb7b8d72c001c01f31f19f01898cf33e018b8fdbe8480409571f9fa921e2503060cf8911d0aca312886b0cdd39af1c2662363ef1c0c1854317428d8a1b07236991a262bcda43c2d59a42d194fc02ecf2a63cb54ff145cb79827cd8cad3fcf3b47656abe7ec5dc66c37c95f36dafcfd65921c6f8ddaf751af35a1f1b73671fd767c5bf183b33b666459be91f8d1d7d6ccd8a03ddb7868f74ff1a1e0259560087c0f2ae008e4a5a7dec9c15ff25e3dccd46c66d7dec9cc77b9a6f67fc504d15fc131f6aaae03ff5f1facd7bbcc04b7cc005040436d8ecb537f57e01843db0c432529de10000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="644">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000024b49444154789c7d934f4893611cc73f931d1a246ca0e060811e3c141ed49b3bd5b59339ba5897f4d4a25379088b0e732731e8b02ee9215c1e2a2f4be9e48260afd0724aae091a1b2c79071aef1bafb18908df0eef5effb4e8b9fc9e1f0fdfe7f9fe3e5f1e9f24b18a8f089adb80f17ef857edb221d46bf8a27d512802bf0c11b14192e488d94c599254af4b9264eeb99bdc574b92349b296b64c23d53322eb3b024cd8cc8274718458368242a2ee1ae0610006a40180a5b30781116bf43ec77012215f809e453b4194583685f94b98d8aab6d8a6bfb0d57bc63337819eecd2f135b2d508bd4e0e302d97c0a8e03f8e4c89d2942ab837da013d801764bd05181dd43584f41ef38536f675c07f4d1e2c0b61bd009951f0dc837a8052bf0fe05d9f5141cc2d44292d4872d902372460e55251d35213541ca3a534b9694bc2ebdb9a6c4f080ba8341496a8acfa46039e753a85ba65497569271e9d1a8123707d4dde18ae588362fd7f1fe1e3880503b6043b83300150884c22cbf9ca2cb1fe5d6660df236576e4cc2013ea368fcc5a01dec032004a5cd12f4c0f2b3c7f47c59e7f67c120261a20b5982c18778e99d67e0cd5e95ac4c59b34f1e287d7548f1bb71c9915470398ddc4f4b8e90215a18987b75c994ba3a821abb33a695ec9ae448e94c4ef55752e2795a43c393f2747837a92af71549d3c984b42dcdbe5e926548d3a9b4cc4faed8cc4a43c393f29cb7382857dd39be95dd0cd74ad6e99f3892563e9b1a9dd07907270cac530692a46d352f69f61e838977270cfc1ecdd8d3452ef8631c1e2f823f06c7ffef3ddd1f760742f8abc324fc0000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="575">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000020649444154789c9d923168136118869f860e7743e13a08cd96a182290e76758ba3ba7890c1644bb7828be2e0588a83d4d10e425210e252aa82a41d2ad641722981b62ec9e060a4ca055ab9844bb9fb0981d721a936d6a1fa2d0fffcffbf2bffff77d13e5bab4f51d725760ad06ee6528d5c0a4c1d4c09d85d22e9859e87e68624dce610c300073f28a89dc7aa4a7b76d5647a2ce2e9818ba5d88cd90a786f60fe876c09a1cdd9d000d5f7aff4592a44a73c8725d52281577a4c09756de4a7e537af05c6ad487dcf3a4f9bb12cfbc48ff53511869f1b194285cb5f9e7ea813d65031e89b54f9d0b79e2f80ca7a0731c03d749e4ae4d5fc00db67d863d98be6463069028edfe3d412b6e01b0d9d9041be25efc9b53d06ec75800c1d1f9066d841baaa8a262bfa84891dc43579122291809462c2c55c5ca763066def3f79451464ee4c895ab8a5f91242d7bcb43efd1706afe61a0c525693c812f95c3b20890254bf3afe7c75e943fcec22329513a3b8524385f1dd2569af4bb34fb77f6f1dafb2c4c2f903fce4372f87792d06a756012087c49a7bb3462a52ea92fe9502af7cb9a896694524a9966e68f04554d649e349476e630a60983395add558cb989c50ee07230738beefd03f868917ae3923cb981451ec34bdadff2a05054bd2a0a853ce17f96acac255e20561121c243ceba23793aa7ff7518a32f9145dc433c44645171bba873ba50fc0495501d620204dd5d0000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="803">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002ea49444154789c6d9241489b671cc67f66397c8e141246a0056109b460420f4b51e62714a6b08b52e8e82d39cd8f5148dcad97512d1be261540f1b49619004ecfc72283187117bd8680a42220cb43245838c04caa862212952eccb1a7876f8b24ad99ecbc3fbc2efe5fffc9f7740a7223e1e978545c24e90ba9ca2b0532079354971a748f26d921225922429f68accf867986fce63052cb23f66077cf1f1b8ec84cd5a658d502044ed758da5ab4b3ce319f6984dfb7a9bfc449ee3cf8f29df2863be30ec6fec130c04994dcfca676151982fe04eb91c1c1c60fb6deeecdd61dc1aa7dd6c33199864f1af45a6c2532c1f2f33199e64e9e7256a0f6b18631898f97246d14894cdcd4d82e12000c180e78ee550b12a587e0bfcded9f5bb3896432d5c23f720872f359cc2f40c693b8de5b7701fbae4becae18c79b033ea801fe6eecdd1bdd125339aa1e2af70eb935b989ec157d82990b13214f78a589645fba00d09085d0f790feebaccdd9b03201e8b53da2de1580e6b3b6bd003aa8b552d2c2ee8c9f213a5bf4e6b6b654b6ac9d373bda7fc4f79695b5a7557a596941849e803f391f9361a89526bd6b86ddda6f2aa42e38f06572257b8f0f105fe55e14101e74307f7c425f5698af5c3759efef6145ff26d924106c98c64decb7c297ae91dcc4b706c071797d4688af53fd7991e99861ef84abd12497f9252b3f49fcc00dda32e84a13bd43d87c7a6a9edd5301828df2c2b9bcbaaf5a8a585ef16fe37b33afd8b8ea41369ebf72de9548a5d8ec95734def77477bd7e8f8e8ece335b0eeeae0bc7d07dd98510349a0dae8d5e63bbb9ed8d58be5956be90d78bc72f94fd21abb38db3f36dafac4afb52f597aa7422d51b75e96f792d9d49914844c48663d28974fffbfbeae43a1ebcd2afea50aa3eae4a9dfed8925a875ec777bfb9abd8704c2446129af86c427a2e951f95a5c3beb7faf08954dfa84ba7921a7a07478622b2c76c0dd41b7566d3b332af0d17872e628c01c0f40cf4fa0ebc316f186490aee9120a84080683347e6d0cfc031483e71b345a822b0000000049454e44ae426082</data>
+    </image>
+    <image name="image4">
+        <data format="PNG" length="297">89504e470d0a1a0a0000000d49484452000000140000001408060000008d891d0d000000f049444154789cad943baec2301444cf955e41c54a58014be0d340855ec9aa225142071562097641cd4a5c20baa120314930456c46b22796acf1c9f5955110f2424138ef285dbf26d0d0b1ab76ba57f78e2b081404a0a18aa1d73aec2ac9eb4d98a33e6911618ad479c79fbf794a240933830ab69b6d8210699f010ca46bb8e7159a1598ac21d23133b0d3870d59d2b3081bb256d871c0ef67d570b558459f2d66d1d384f1a8b21a7ef4e101f8afbfd7cb350f1e8c18713a9fbeae2fe70b00d3c914531036b6fa907c9919f2b20fc2f972de21e8933544ed7d51137e4be8bcb3a2d7a67f299d5bfec5887dd87ece4bfd095010c547ded7c0ff0000000049454e44ae426082</data>
+    </image>
+    <image name="image5">
+        <data format="PNG" length="433">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000017849444154789c8592b14ac3501486bf48077573f0015ca58b9b6473f5113afa0aba3939383bbaa8632727a96e5650720721154a93412442870a115ae8908808bfc3bdb149a3357039f71ceefdf3dfef1c34153242a9d4e986b2519acfa3ab4c8109f8393f158109a02876baa12429cb24491aa7634952148f2459b1c3e39948116749aad9e7448a5a94b8fd7dddc9921918fca6cff5a007409e032b3099e4b00eafaf6f6c6ec0c1e939f143cec5539b9bbb2d9981812650665073307631b1e1d644d2503a3c3ad3ff0ca676331a5a95e0319252e9f22654546251650076cd3b28eaae3bfbce419d810400ab1e93f71cd600cf03c03c26b00ddd9798e5468bdf1964737f2c566ccb414fd2e77f0cdcdb8bcbd1b39d8330b624c35eb280c16f0e2445cfaedeb7a1cca0e6609c66f527942632ec279589ac3298aa7249c36a1e3a167f33281d4e5cff93645415e92f6250f47da499833283b8cec00b4c80dff4393839d75ea3c5c5579be5468b8faf368bf2dd9d27cf6ffa7c034f31e1086dac45170000000049454e44ae426082</data>
+    </image>
+    <image name="image6">
+        <data format="XPM.GZ" length="347">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade65232345330345230513054d2e152d253485650360003105719c64d4b03719340dcb434986c22840b0260bd68002ca69c08864910001183082542016dd425a100a83a14409a3a74bfd55a730100239458a4</data>
+    </image>
+    <image name="image7">
+        <data format="XPM.GZ" length="332">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade65232345330345230563054d2e152d253485650360003105719c64d4b03711341dc3430002b460360316565e544653840114b840088189443501d36f31251005c9d3235d5a1fbadd69a0b00c62248ac</data>
+    </image>
+    <image name="image8">
+        <data format="PNG" length="338">89504e470d0a1a0a0000000d4948445200000010000000120806000000523b5e6a0000011949444154789ccd93214fc4401484bf9e425cd0fc8526674035a74840a1084905b53890fc820a542d884b4062901814723728ce5ceefec20551d1e00751ee6eb7bb8b66936693be997993b7f3502764853a61ac81e25d1495821bb69f8737d638e44a796d44d97a04ca569c37fe3f903ab1231f1b5dbf48d46d00a4a8d4bcaa1719d6370e38bdd5c54c21d911c9ef1438194d27535800df67acd616ea16f7a85306c0de0d07e34f38bcf2ea23bbb030013e4e58bd3dc0fc09ca9d48b69fa91779068efafaa0433f8394f55ffb662951de8735ef1512e4e64be2f2312e1ee420d639410e72e0dea9a9bb642f07b144e6753c172e3eed2031d00037ecbc554e08044e530e36bbe12e52d4e95f3388ed46e0f49fcf20421ee27e009cba0d3b265cccba0000000049454e44ae426082</data>
+    </image>
+    <image name="image9">
+        <data format="PNG" length="197">89504e470d0a1a0a0000000d49484452000000100000000e0806000000262f9c8a0000008c49444154789ca591c10d84201405a7342d8d862c621328c7030dcc1ec44511cdaa177e3e8499c707b398c42c31456ef5c6ba79bb1a65e6857946022fcc01194a8247e60181861cf06f336896fde107992ae4cc3c96cb26010a315021db2427e6f57c597a9009afcc2be4471a7b90cee57636fba68534b17bbf73246e219d377713b46458225f990f33785abf308c146a8d2447140000000049454e44ae426082</data>
+    </image>
+    <image name="image10">
+        <data format="PNG" length="308">89504e470d0a1a0a0000000d494844520000001200000012080600000056ce8e57000000fb49444154789ca5d1316a02411886e1778d65102c639133c42e58da04425ac156e23552849c44f01c2b08ff1e20f6536ce10104214df82c664665595767fd619965599e799981c43190402a2503013de02109f901d919220fbd05ac5d894ed004e8776f2d01a014c573c608282aff5c850c34aa2071f25ba1a6921cf8ba56114beacec4406103019fc03b970ebbee76ac1ef9009ea8bbfe8492cb088024697b4709809cfc388fb52a8935ce395fb436d9b7b5438e2585640bd3f06598864038e4adb45c2cabc0147fc58d48372200e341c6ca7f9f037b6007fc86750ffc37427978563003fe52803859587bc06b48dfa40055a8033c86f72420ce0140abe234da88326b0000000049454e44ae426082</data>
+    </image>
+    <image name="image11">
+        <data format="PNG" length="557">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000001f449444154789c95933168136114c77f29379cd0e1860c57c890401053b20871c8c5c1065c5a05c9988c1dbb899b2288162935b8e8960c42eaa263e8506902ea7da383041d15159221b4470c3660e0ef7031b95c7170f8f3f878efffdeef7bdf1d1a0919a191f08dcfff9e13bef1f1f21ea667f0f21e3cbe275677c03a000b9802d4380b9eb3feb4ce41e738b1543fef2c497bfbd2374947c7d24892917422e9b02d7d9474a3a2d6d5a2a2247302de7744b60cdd2604a7605d00aa306dc23880096055f934acb3fb7dc0cefdbb092fefb1e2e53db8b826926578f508ec22a4d620b309c33a24cbe03870651b7eecb29eae501df4a97925999e61c5f40ca432d07d02bdcf1074a15a83641fbe7e81de4bb87d070ac0cf0974eb6c05a76480925792e5e53d08fa30cd41ff10c66978d381ebe5f02a37b7e037f0ee0c067d184ff8301cb00d74817081ae2b65d3d2aa235dca49d99cf4a22549d2e89774ab22b96e280bc9b2b50102c2f794e3844908954acfcc61d0defe2247ac816f7c64db926d87c9c2e5c5e442517af0303c371b8b1a3b4e30eb2a08aff0d697ae3516139b0de9e824c407b56d5b8d28411af43a86b8841c916fd9aa5833f39cc00817d4fe87296a6e5bf6c23cdfc1ec737641cf2c24db517bb697798c4f066924cefd652e6813d4026d44d4e0bc59462c11fc8dc48ae38ad6ff015e8fe9c35122ff8e0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>m_progressOkButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>progressOkButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+        <sender>m_progressEditButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>progressEditButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+        <sender>m_progressTryAgainButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>progressTryAgainButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+        <sender>m_addFromFileCheckBox</sender>
+        <signal>stateChanged(int)</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>checkBoxStateChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>m_addWordBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>addWordToLVSlot()</slot>
+    </connection>
+    <connection>
+        <sender>m_clearAllBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>clearAllButtonSlot()</slot>
+    </connection>
+    <connection>
+        <sender>m_trWordLineEdit</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>trWordLETextChanged(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>m_findRecordsFileBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>findRecordsFileSlot()</slot>
+    </connection>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>m_finishButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>finishButtonClickedSlot()</slot>
+    </connection>
+    <connection>
+        <sender>m_trWordLineEdit</sender>
+        <signal>returnPressed()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>addWordToLVSlot()</slot>
+    </connection>
+    <connection>
+        <sender>m_advanceEditButton</sender>
+        <signal>clicked()</signal>
+        <receiver>AddWordDialogBase</receiver>
+        <slot>advanceEditButton_clicked()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>addWordToLVSlot()</slot>
+    <slot>clearAllButtonSlot()</slot>
+    <slot>checkBoxStateChanged( int )</slot>
+    <slot>findRecordsFileSlot()</slot>
+    <slot>enWordLETextChanged( const QString &amp; )</slot>
+    <slot>trWordLETextChanged( const QString &amp; )</slot>
+    <slot>progressEditButtonClickedSlot()</slot>
+    <slot>progressTryAgainButtonClickedSlot()</slot>
+    <slot>progressOkButtonClickedSlot()</slot>
+    <slot>finishButtonClickedSlot()</slot>
+    <slot>advanceEditButton_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

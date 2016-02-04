@@ -1,0 +1,12 @@
+echo \
+"------------------------------------------------------------------------
+Configuration:
+
+  Source code location:   ${srcdir}
+  Compiler:               ${CXX}
+  Compiler flags:         ${CXXFLAGS}
+  Host System Type:       ${host}
+  Install path:           ${prefix}
+
+  See config.h for further configuration information.
+------------------------------------------------------------------------"

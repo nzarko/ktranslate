@@ -1,0 +1,184 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>EditWordDialogBase</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>EditWordDialogBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>511</width>
+            <height>157</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Edit Word</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox2</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel3</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&lt;b&gt;Edit the selected word &lt;/b&gt;</string>
+                    </property>
+                    <property name="alignment">
+                        <set>AlignVCenter</set>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout3</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel4</cstring>
+                            </property>
+                            <property name="text">
+                                <string>English Word :</string>
+                            </property>
+                        </widget>
+                        <widget class="KLineEdit">
+                            <property name="name">
+                                <cstring>m_newEnWordLEdit</cstring>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout4</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel5</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Translation    :</string>
+                            </property>
+                        </widget>
+                        <widget class="KLineEdit">
+                            <property name="name">
+                                <cstring>m_newTrWordLEdit</cstring>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout5</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>Horizontal Spacing2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>120</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonOk</cstring>
+                    </property>
+                    <property name="text">
+                        <string>OK</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image0</iconset>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonCancel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image1</iconset>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="218">89504e470d0a1a0a0000000d49484452000000100000000e0806000000262f9c8a000000a149444154789ca593310ec3200c459f512f15bc94a1b7ea985b7548a4ca5c8b0e0185201229f44b0c08bfef8f0562d118d64472ffc0fa55c60c32ccc2804105df376860d6da6022e947d31dd8a2893b1c06e89a3470c8308000892710f2622bb2d75670d6b9783b8b26acec05b027b9e85c24e521bdbda6a54d0207786e60a88638f79254b17b30c0a3de5834515f0db173e756d2fb0bea3585cc5fc1a70677f403becb6659b773d2b50000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="555">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000001f249444154789ca5933f68145110c67f2bafd8831356b0b8c01509a4f002161e696e178b9cd80882dc757795a5c4d22e219d4d48b0b45210fcd3888511bbc4eaad168216e259044e50d8851cdc6216f71507633139b37792ca8181c7bcf966e6fb98f16c6cf91f33f38170efad500df4c700138d1759c6ca835d9e1dec7be57c6f3a41d80a85ed1db8dc546035009c16c8c730761cbc78ce6e96b0b1bde3fd5b2073821bc35106d9184c45332605e419389de8eb28e1fe8f94f5ad0d0fe01c40d8e90a490283011c0ea1bea05d4709a4290401f83efc1cb2923b7a69423f8ce46f01ea4b9afc65a0e05e1fd6daf07da853dcb907b7fb70ece028a1998d5902a2301215314be0f3274812f81043a301d7db4a6535544d1e3e823481dc918c522a53116c6c915a4d647951a41a885c6a882c37449e3c151111f9f55be45647a45653378835beac8100a2149c83dca958df06e00ab8da86e302ce57a0d5522dd21426aae7ec1e38a70eb07a055eef43d587f635b87903b636e1e20558bfab79a5fd30008573548caf91dcc1e140411fdfabd717207330d1264579936c6c59047909225337fee97bceadf1a563943f20d8d862634b0de4cd19a032b867fc533088573ea66e18c9a68186092866a452ce8f71bc9acc4cef79f3d7d80d23699ebc67b802ef66a97b50ba85b245276b7a964dc1007f00aa45118551b746bd0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>EditWordDialogBase</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>EditWordDialogBase</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

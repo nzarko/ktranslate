@@ -1,0 +1,33 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="ktranslate_part" version="1">
+<MenuBar>
+  <Menu name="file"><text>&amp;File</text>
+    <Action name="file_open"/>
+    <Separator/>
+    <Action name="file_save"/>
+    <Action name="file_save_as"/>
+  </Menu>
+  <Menu name="edit"><text>&amp;Edit</text>
+    <Action name="edit_copy"/>
+    <Action name="add_word"/>
+    <Action name="edit_word"/>
+    <Action name="delete_word"/>
+  </Menu>
+  <Menu name="view"><text>&amp;View</text>
+		    <Action name="view_allrecords"/>
+  </Menu>
+  <Menu name="settings"><text>&amp;Settings</text>
+	  <Action name="options_configure"/>
+  </Menu>
+</MenuBar>
+
+<ToolBar name="mainToolBar">
+  <Action name="file_open"/>
+  <Action name="file_save"/>
+  <Action name="file_print"/>
+  <Action name="edit_copy"/>
+  <Action name="add_word"/>
+  <Action name="edit_word"/>
+  <Action name="delete_word"/>
+</ToolBar>
+</kpartgui>

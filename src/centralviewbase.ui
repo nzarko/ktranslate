@@ -1,0 +1,204 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>CentralViewBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>CentralViewBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <property name="focusPolicy">
+        <enum>ClickFocus</enum>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="mouseTracking">
+                <bool>true</bool>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                        <enum>Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="title">
+                        <string></string>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout2</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="KComboBox">
+                                    <property name="name">
+                                        <cstring>m_wToTranslateCbx</cstring>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>5</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>12</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="editable">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="insertionPolicy">
+                                        <enum>AtTop</enum>
+                                    </property>
+                                </widget>
+                                <widget class="KPushButton">
+                                    <property name="name">
+                                        <cstring>m_translateButton</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy>
+                                            <hsizetype>0</hsizetype>
+                                            <vsizetype>0</vsizetype>
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="font">
+                                        <font>
+                                            <bold>1</bold>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Translate</string>
+                                    </property>
+                                    <property name="on">
+                                        <bool>false</bool>
+                                    </property>
+                                </widget>
+                            </hbox>
+                        </widget>
+                    </hbox>
+                </widget>
+                <widget class="KListView">
+                    <column>
+                        <property name="text">
+                            <string>English Word</string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image0</pixmap>
+                        </property>
+                        <property name="clickable">
+                            <bool>false</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Greek Word</string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap>image1</pixmap>
+                        </property>
+                        <property name="clickable">
+                            <bool>false</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>m_wordListView</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <family>Verdana</family>
+                        </font>
+                    </property>
+                    <property name="allColumnsShowFocus">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="347">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade65232345330345230513054d2e152d253485650360003105719c64d4b03719340dcb434986c22840b0260bd68002ca69c08864910001183082542016dd425a100a83a14409a3a74bfd55a730100239458a4</data>
+    </image>
+    <image name="image1">
+        <data format="XPM.GZ" length="332">789cd3d7528808f055d0d2e72a2e492cc94c5648ce482c52d04a29cdcdad8c8eb5ade65232345330345230563054d2e152d253485650360003105719c64d4b03711341dc3430002b460360316565e544653840114b840088189443501d36f31251005c9d3235d5a1fbadd69a0b00c62248ac</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>m_wToTranslateCbx</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>CentralViewBase</receiver>
+        <slot>comboBoxActivatedSlot(const QString&amp;)</slot>
+    </connection>
+    <connection>
+        <sender>m_translateButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CentralViewBase</receiver>
+        <slot>translateBtnClickedSlot()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>comboBoxActivatedSlot( const QString&amp; )</slot>
+    <slot>translateBtnClickedSlot()</slot>
+    <slot>combBoxTextChangedSlot( const QString &amp; )</slot>
+    <slot>listContextMenuSlot(QListViewItem*, const QPoint &amp;, int )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

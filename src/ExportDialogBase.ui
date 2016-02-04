@@ -1,0 +1,282 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>ExportDialogBase</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>ExportDialogBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>385</width>
+            <height>260</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Export...</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <widget class="QGroupBox">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="title">
+                <string></string>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout6</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QButtonGroup">
+                            <property name="name">
+                                <cstring>buttonGroup3</cstring>
+                            </property>
+                            <property name="title">
+                                <string></string>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout2</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QRadioButton">
+                                            <property name="name">
+                                                <cstring>m_curViewRBtn</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Current &amp;View</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QRadioButton">
+                                            <property name="name">
+                                                <cstring>m_dictFileRBtn</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Dictionary &amp;File</string>
+                                            </property>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                            </vbox>
+                        </widget>
+                        <widget class="QGroupBox">
+                            <property name="name">
+                                <cstring>groupBox3</cstring>
+                            </property>
+                            <property name="title">
+                                <string></string>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout3</cstring>
+                                    </property>
+                                    <vbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <widget class="QLabel">
+                                            <property name="name">
+                                                <cstring>textLabel2</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Export to :</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QCheckBox">
+                                            <property name="name">
+                                                <cstring>m_htmlChkBox</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>HTML</string>
+                                            </property>
+                                        </widget>
+                                        <widget class="QCheckBox">
+                                            <property name="name">
+                                                <cstring>m_textChkBox</cstring>
+                                            </property>
+                                            <property name="text">
+                                                <string>Te&amp;xt</string>
+                                            </property>
+                                        </widget>
+                                    </vbox>
+                                </widget>
+                                <widget class="QLayoutWidget">
+                                    <property name="name">
+                                        <cstring>layout5</cstring>
+                                    </property>
+                                    <hbox>
+                                        <property name="name">
+                                            <cstring>unnamed</cstring>
+                                        </property>
+                                        <spacer>
+                                            <property name="name">
+                                                <cstring>spacer2</cstring>
+                                            </property>
+                                            <property name="orientation">
+                                                <enum>Horizontal</enum>
+                                            </property>
+                                            <property name="sizeType">
+                                                <enum>Fixed</enum>
+                                            </property>
+                                            <property name="sizeHint">
+                                                <size>
+                                                    <width>40</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                        <widget class="QLayoutWidget">
+                                            <property name="name">
+                                                <cstring>layout4</cstring>
+                                            </property>
+                                            <vbox>
+                                                <property name="name">
+                                                    <cstring>unnamed</cstring>
+                                                </property>
+                                                <widget class="QRadioButton">
+                                                    <property name="name">
+                                                        <cstring>m_semicolonRBtn</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>&amp;Semicolon Separated</string>
+                                                    </property>
+                                                    <property name="accel">
+                                                        <string>Alt+S</string>
+                                                    </property>
+                                                </widget>
+                                                <widget class="QRadioButton">
+                                                    <property name="name">
+                                                        <cstring>m_newLineRBtn</cstring>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>&amp;New Line Separated</string>
+                                                    </property>
+                                                </widget>
+                                            </vbox>
+                                        </widget>
+                                    </hbox>
+                                </widget>
+                            </vbox>
+                        </widget>
+                    </vbox>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonOk</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image0</iconset>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonCancel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>C&amp;ancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+A</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image1</iconset>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<images>
+    <image name="image0">
+        <data format="PNG" length="512">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000001c749444154789cc5d33d4895511c06f0dffde076820bddf24d25146edc281a5c1c6a92d01a1b1a2b722aa5826894b6a23528706890266908836872b12f84885a6a882c0c2ef6815c956e72d197dbab36f876295787cef2703e9e739efff37f4e666363c37646765b6c64dcd3adee0b9847c02222c428a518a1d15aaf84c879b19e9c639e4bcc59316b1dcb5847137924a9ce26b2f669ba8ad1a4e16092b8940dc5f02b84302ee897a42ffa0b8b88b529192975959e967bca37c5e6040378974b7a925d517f742a594e8e27b5e495155f5b0ae8d03418bac258d4179d2eb615a3ea8beaa4a641896f0a9be2ded417eb4dc3ba74ba2fe845105c1479ec8cbb861c8ac5aa13d5097967e57dffa3306348bbb24957f48a31eab3d8923e479cc04e3cc3b83b8aae2bfa29a4fe14c92baa99f5dabc5e9d1852d15071180b989098725be41ad65a5d296d1a9cb31fb10e0527556435d08e193cc0132376b861dd8642da957cea5181ac55ac7a69d6926abaf9168fc4a60ddbedd63f5dd982593112333e782f4ec9e37e987659de98467a693d256ec19c03adb0745b36e093051f9d133c94c5de546e94062c4acfefd99ce7945b35c56a8eaab9a060aa55eb5a1aefb4e6ad1e64fefb6ffc0d79e39f217d6f36c80000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="790">89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000002dd49444154789c6d934f681c7514c73fd9fcb2fca6ddb53ba55b6662529d98820d583a650bdd250793520f551182169a636a512af42052297af0a207c11ec4f4d0c09e0aa2547b88eea1a227714ba35d69e86e206927a4cbced2a63bd3906e7ec80f7e1e265a4c7cf078bcc7f7fbfec1b787ffb14ea12881238166d8136e8fd2e15d25991bba51ed6ec5f66c216642cdc79ee0dd1876b9031e8105de62405dabc7b690df34e0d363bf5757b64ded16269c4ea1b8605e3b6bccb7578d5933891b634cc71873f39e31a7264da7507cf8f3e8d8cb5b57cedc39545c3067ce9a6efd4e425c696d8f0f8c695df8c8740ac5d52ba3632e402fc0877b073fdb37e0bfceb9d3f40d1c0401ac6b680590b6a1a560771e2464f7fb58f5da8e7cbb9d8d5e7de57aea8f43be9482b7a3e3238004114116c8010aa2a51a48200f6461230e60748248abc913f7dbfdc213f28825d865793e040d588de16809f2360cdbd8cb161cb0935b677fc4ba5c81b8c188f032411c957a4feecd1f739dc137c2672cb22a43182f915d78084e16dc2c3c9b9037be9ca6ef5a053a0100918e1169713be509af07a57063a059c35512feacc0d795a75fae4558d76ec16a08c203c0169236a452810eee124750adc07c037efa1e722370fef426b90ebe0d17df4b721d80b008b52207cd942de55c5df318f17c02189b80cf37c1e73e80f7bfd86c72182e7d079903202187fba4b2c7aea5866e54bbb6a01cb20c9e036f8d27375f9c06bd41b45fc2cc342c06f092cdc6710f84a44a381be69d562fc0d4bec19bf6ba7ad37a6e68370f342cced3d79590d658fd0721ad61793da9afac13de9e6bce0ff8e71777aaa57fb5f0c3d1e20b25cdf5d8f787bc17c78968630b87482731d46d720b751ab55a3370dc772a6eeed7f24c79ed3f62ba3a3ae69694fa249272d2f3c73388182be3516fdec20d7812abc6ec6f8effd52f79355f9e29af6d5323c0d499a9f489fbed7e1947254fc8e100957291cd4aceae85aed352a847e599f25fffe0ff068fdd482f3dfd73910000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>ExportDialogBase</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>ExportDialogBase</receiver>
+        <slot>accept()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

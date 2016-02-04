@@ -1,0 +1,13 @@
+30/08/2005 Nikos Zarkadas <nzarko@acn.gr>
+	* Added command line arguments
+	
+12/09/2004 Nikos Zarkadas <nzarko@acn.gr>
+	* Added functionality for adding editing and deleting records of the dictionary file. (KDialogs)
+	* Also new application icon is created.
+
+06/06/2004 Nikos Zarkadas <nzarko@acn.gr>
+	* Project started. The main functionality was implemented.
+	* Added The kwrite KPart so the user it was able to see all the dictionary file.
+
+10/08/2004 Nikos Zarkadas <nzarko@acn.gr>
+	* KWrite part is for writing new translations files and not just to display the dictionary file.

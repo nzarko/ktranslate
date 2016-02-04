@@ -1,0 +1,31 @@
+ktranslate (1.0.0-1) unstable; urgency=low
+
+  *New version compatible with kde3.4
+
+ -- Nikos Zarkadas <nikzar@localhost.localdomain>  Tue, 15 Nov 2005 22:24:09 +0200
+
+ktranslate (0.90-25) unstable; urgency=low
+
+  * Fix dependencies problems 
+
+ -- Nikos Zarkadas <nikzar@localhost.localdomain>  Fri, 19 Aug 2005 18:33:37 +0300
+
+ktranslate (0.90-24) unstable; urgency=low
+
+  * Fix dependencies problems.
+
+ -- Nikos Zarkadas <nikzar@localhost.localdomain>  Fri, 19 Aug 2005 11:30:11 +0300
+
+ktranslate (0.90-23) unstable; urgency=low
+
+  * Change Logo in about dialog.
+  * Fix kde menu entry bug.
+
+ -- Nikos Zarkadas <nikzar@localhost.localdomain>  Thu, 19 May 2005 21:57:35 +0300
+
+ktranslate (0.90-22) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Nikos Zarkadas <nzarko@acn.gr>  Wed, 18 May 2005 20:27:16 +0300
+
